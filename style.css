@@ -1,22 +1,19 @@
 *{
     margin: 0px;
     padding:0px;
-    
 }
 
 nav{
     background-color: gray;
     height: 50px;
     margin: 20px;
-
 }
 
 .timer-container{
     border: 3px solid black;
     width: 100px;
     height: 20px;
-    margin: 20px;
-    
+    margin: 20px; 
 }
 
 button {
@@ -28,8 +25,43 @@ button {
 }
 
 .cards-container{
-    border: 2px solid;
     height: 400px;
-    width: 50%;
-    margin: 20px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.card {
+    border-radius: 10px;
+    border: 1px solid black;
+    flex: 1 0 calc(23% - 1em);
+    margin: 10px;
+    box-shadow: 5px 5px 18px -2px #000000;
+}
+.card-front {
+    background-color: linear-gradient(rgb(72, 163, 72), rgb(211, 211, 65)), rgb(86, 86, 233);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 10px;
+}
+img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .cards-container {
+        height: 750px;
+        width: 700px;
+    }
+    .card {
+        margin: 14px;
+    }
 }
