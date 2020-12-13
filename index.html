@@ -29,161 +29,82 @@
     </header>
 
     <div class="button-container" >
-       <button id="start" onclick="startGame">START</button>
+       <button id="start" onclick="startGame()">START</button>
 
        <div class="timer-container">
             <div id="timer"></div>
-            <div id="timer-minutes"></div>
-            <div id="timer-seconds"></div>
        </div>
 
        <button id="restart" onclick="restartGame">RESET</button>
     </div>
+
+
+
    
     <div class="cards-container">
-        <div class="card one">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/netflix.jpg" alt="netflix-image">
-                </div>
-            </div>
+        <div class="card one" data-related="netflix">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">    
+            <img class="back" src="./images/netflix.jpg" alt="netflix-image">
         </div>
-        <div class="card two">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/mask.jpg" alt="mask-image">
-                </div>
-            </div>
+        <div class="card two" data-related="mask">            
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img class="back"src="./images/mask.jpg" alt="mask-image">               
         </div>
-        <div class="card three">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/cell-phone.jpg" alt="cell-phone-image">
-                </div>
-            </div>
+        <div class="card three" data-related="cell-phone">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/cell-phone.jpg" alt="cell-phone-image">      
         </div>
-        <div class="card four">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/toilet-paper.jpg" alt="toilet-paper-image">
-                </div>
-            </div>
+        <div class="card four" data-related="toilet-paper">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/toilet-paper.jpg" alt="toilet-paper-image"> 
         </div>
-        <div class="card five">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/wine.jpg" alt="wine-image">
-                </div>
-            </div>
+        <div class="card five" data-related="wine">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/wine.jpg" alt="wine-image">  
         </div>
-        <div class="card six">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/hand-wash.jpg" alt="hand-washing-image">
-                </div>
-            </div>
+        <div class="card six" data-related="hand-wash">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/hand-wash.jpg" alt="hand-washing-image">        
         </div>
-        <div class="card seven">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/dog.jpg" alt="dog-image">
-                </div>
-            </div>
+        <div class="card seven" data-related="dog">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/dog.jpg" alt="dog-image">
         </div>
-        <div class="card eight">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/zoom.jpg" alt="computer-image">
-                </div>
-            </div>
+        <div class="card eight" data-related="computer">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/zoom.jpg" alt="computer-image">  
         </div>
-        <div class="card nine">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/netflix.jpg" alt="netflix-image">
-                </div>
-            </div>
+        <div class="card nine" data-related="netflix">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/netflix.jpg" alt="netflix-image">     
         </div>
-        <div class="card ten">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/mask.jpg" alt="mask-image">
-                </div>
-            </div>
+        <div class="card ten" data-related="mask">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/mask.jpg" alt="mask-image">  
         </div>
-        <div class="card eleven">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/cell-phone.jpg" alt="cell-phone-image">
-                </div>
-            </div>
+        <div class="card eleven" data-related="cell-phone">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/cell-phone.jpg" alt="cell-phone-image">
         </div>
-        <div class="card twelve">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/toilet-paper.jpg" alt="toilet-paper-image">
-                </div>
-            </div>
+        <div class="card twelve" data-related="toilet-paper">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/toilet-paper.jpg" alt="toilet-paper-image">      
         </div>
-        <div class="card thirteen">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/wine.jpg" alt="wine-image">
-                </div>
-            </div>
+        <div class="card thirteen" data-related="wine">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/wine.jpg" alt="wine-image">     
         </div>
-        <div class="card fourteen">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/hand-wash.jpg" alt="hand-washing-image">
-                </div>
-            </div>
+        <div class="card fourteen" data-related="hand-wash">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/hand-wash.jpg" alt="hand-washing-image">
         </div>
-        <div class="card fifteen">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/dog.jpg" alt="dog-image">
-                </div>
-            </div>
+        <div class="card fifteen" data-related="dog">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/dog.jpg" alt="dog-image">    
         </div>
-        <div class="card sixteen">
-            <div class="card-inner">
-                <div class="card-front">
-                </div>
-                <div class="card-back">
-                    <img src="./images/zoom.jpg" alt="computer-image">
-                </div>
-            </div>
+        <div class="card sixteen" data-related="computer">
+            <img class="front" src="https://www.dicardiology.com/sites/default/files/styles/gallery_image/public/Novel_Coronavirus_12_NIH_Flickr_archive%202.jpg?itok=4FLXDpcL">
+            <img src="./images/zoom.jpg" alt="computer-image">     
         </div>
     </div>
 
