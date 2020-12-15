@@ -17,6 +17,8 @@ let selTwo;
 
 let matchedCounter = 0;
 
+let array = [];
+
 
 
 function frontVisibility() {
@@ -94,6 +96,9 @@ function checkForMatch() {
 
 function disableCards() {
     setTimeout(() => {
+        array.push(firstCard)
+        array.push(secondCard)
+
         firstCard.style.visibility = 'hidden'
         secondCard.style.visibility = 'hidden'
 
@@ -140,6 +145,28 @@ function endGame() {
 
         // console.log('congrats')
     }
+}
+
+
+
+function restartButton() {
+    
+    hasFlippedCard = false;
+    firstCard = null;
+    secondCard = null;
+    matchedCounter = 0;
+    seconds = 0;
+    minutes = 0;
+    selOne = null;
+    selTwo = null;
+    clearInterval(interval);
+
+    array.forEach(card => card.style.visibility = 'visible')
+    cards.forEach(card => card.addEventListener('click', flipCard));
+    frontSel.forEach(element => element.style.visibility = 'visible');
+    shuffle(cards);
+    startTimer();
+    
 }
 
 
